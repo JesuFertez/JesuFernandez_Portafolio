@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Oooh+Baby&display=swap');
+
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+}
+
+/* --------------- NavBar ---------------------------*/
+
+nav.navbar {
+	padding: 16px;
+	margin-bottom: 20px;
+	box-shadow: none;
+	font-size: x-large;
+}
+
+#link-home {
+	font-size: x-large;
+	color: #E4632C;
+}
+
+nav a:hover {
+	text-shadow: rgb(209, 217, 212) 0.5px 0.5px;
+
+}
+
+/* --------------- Cuerpo ---------------------------*/
+
+.body {
+
+	font-family: 'Belanosima', sans-serif;
+	display: grid;
+	min-height: 100vh;
+	grid-template-rows: auto 1fr auto;
+	text-align: center;
+	background-color: #09031A;
+}
+
+.container {
+	margin: auto;
+}
+
+/* --- Texto Home ---*/
+#grupo-home {
+	width: 664px;
+	height: 332px;
+	flex-shrink: 0;
+	margin: auto;
+}
+
+h1.nombre {
+	font-size: 155px;
+	color: #D9C8C8;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 70px;
+	/* 43.75% */
+	margin-bottom: 30px;
+}
+
+h1.apellido {
+	font-size: 150px;
+	color: #D9C8C8;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 100px;
+	/* 66.667% */
+}
+
+.subtitulo {
+	font-size: 32px;
+	color: #D9C8C8;
+	text-align: center;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+/* --- Grupo de imágenes ---*/
+
+.grupo_img {
+	margin: auto;
+}
+
+/* --- Imagen ---*/
+.img {
+	width: 400px;
+	border-radius: 8px;
+	height: auto;
+	background-color: #F2B077;
+}
+
+/* --- Barra lateral de imágenes ---*/
+.imgLateral {
+	background-color: rgb(239, 36, 34);
+	border-radius: 8px;
+	width: 120px;
+	height: 90px;
+	margin-top: 16px;
+}
+
+.imgLateral1 {
+	background-color: rgb(239, 36, 34);
+	border-radius: 8px;
+	width: 120px;
+	height: 90px;
+}
+
+/* --------------- Contacto ---------------------------*/
+
+.texto-lateral {
+	display: flex;
+	width: 480px;
+	height: 549px;
+	flex-direction: column;
+	justify-content: center;
+	flex-shrink: 0;
+}
+
+#trabajemos {
+	color: #FFF;
+	font-family: Belanosima;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+
+}
+
+#contactate {
+	color: #FFF;
+	font-family: Belanosima;
+	font-size: 50px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+#poder {
+	color: #E4632C;
+	font-family: Oooh Baby;
+	font-size: 64px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+#texto-contacto {
+	color: #FFF;
+	text-align: center;
+	font-family: Belanosima;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+
+}
+
+/* --- form-Contacto --- */
+
+#nombre,
+#email {
+	width: 476px;
+	height: 40px;
+	flex-shrink: 0;
+}
+
+#mensaje {
+	width: 476px;
+	height: 199px;
+	flex-shrink: 0;
+
+}
+
+.form-label {
+	position: relative;
+	display: flex;
+	padding-top: 5px;
+}
+
+button.btn {
+	color: #FFF;
+	font-family: Belanosima;
+	font-size: 20px;
+	font-style: normal;
+	margin-top: 16px;
+	padding: 5px 20px;
+	width: 100px;
+	flex-shrink: 0;
+	border-radius: 5px;
+	background: #E4632C;
+	display: flex;
+	text-align: center;
+}
+
+button.btn:hover {
+	background: rgb(238, 146, 46);
+}
+
+.form-label,
+.form-control {
+	color: #D9C8C8;
+
+}
+
+/* --------------- Sobre mí ---------------------------*/
+
+
+#llamame {
+	color: #FFF;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	font-family: Oooh Baby;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 70px;
+	/* 175% */
+	margin-left: 230px;
+	margin-top: 90px;
+}
+
+#nombre-sobre {
+	color: #D9C8C8;
+	font-family: Belanosima;
+	font-size: 160px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 70px;
+	/* 43.75% */
+	margin-left: 110px;
+	margin-top: -20px;
+	margin-bottom: 50px;
+}
+
+.indicador {
+	width: 328px;
+	height: 9px;
+	flex-shrink: 0;
+	background: #D9C8C8;
+	margin-left: 140px;
+	position: relative;
+	bottom: 95px;
+
+}
+
+.circulos-nav {
+	width: 186px;
+	display: inline;
+	margin-left: 90px;
+	position: relative;
+	bottom: 75px;
+}
+
+.btn-circulo {
+	width: 25px;
+	height: auto;
+
+}
+
+.text-sobre {
+	width: 407px;
+	height: 301px;
+	flex-shrink: 0;
+	color: #FFF;
+	text-align: center;
+	font-family: Belanosima;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 30px;
+	/* 150% */
+	margin-left: 100px;
+	margin-top: 80px;
+}
+
+#img-grande {
+	width: 445px;
+	height: 501px;
+	flex-shrink: 0;
+	border-radius: 5px;
+	border: 1px solid #000;
+	background: #D9D9D9;
+}
+
+.grupo_img {
+	flex-direction: row;
+	width: 444px;
+	height: 81px;
+	flex-shrink: 0;
+}
+
+.img-peq {
+	margin-top: 16px;
+	width: 89px;
+	height: 81px;
+	border-radius: 5px;
+	display: inline;
+	margin: 13px;
+	background: #D9D9D9;
+}
+
+/* --------------- Conocimiento ---------------------------*/
+h1.titulo-con {
+	width: 672px;
+	height: 134px;
+	flex-shrink: 0;
+	color: #D9C8C8;
+	font-family: Belanosima;
+	font-size: 120px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 70px;
+	
+	/* 58.333% */
+}
+
+.alineacion-con {
+	position: relative;
+	text-align: center;
+
+}
+
+.indicador-con {
+	
+	width: 328px;
+	height: 9px;
+	flex-shrink: 0;
+	background: #D9C8C8;
+
+
+}
+
+.alineacion-img {
+	display: inline;
+	flex-direction: column;
+
+}
+
+.cuadrado {
+	width: 150px;
+	height: 158px;
+	flex-shrink: 0;
+	background-color: #D9C8C8;
+}
+
+#textos-centro {
+	width: 823px;
+	height: 263px;
+	flex-shrink: 0;
+	display: flex;
+}
+
+.texto-interior {
+	color: #FFF;
+	font-family: Belanosima;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+
+/* ----------------------- Footer de página ------------------------------- */
+
+.footer {
+	align-content: end;
+	/* Lo coloca inicialmente al final del contenedor */
+	width: 100%;
+	margin-top: auto;
+	/* Empuja el footer hacia abajo, pero no m�s all� del final del contenido */
+}
+
+.container-icons {
+	margin-right: 16px;
+	display: flex;
+	align-content: end;
+	justify-content: end;
+}
+
+.social-icons {
+	display: inline-block;
+	align-items: center;
+	justify-content: end;
+	padding: 30px;
+}
