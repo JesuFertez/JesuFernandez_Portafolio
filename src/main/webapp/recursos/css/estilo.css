@@ -16,11 +16,11 @@ nav.navbar {
 	padding: 16px;
 	margin-bottom: 20px;
 	box-shadow: none;
-	font-size: x-large;
+	font-size: 25px;
 }
 
 #link-home {
-	font-size: x-large;
+	font-size: 28px;
 	color: #E4632C;
 }
 
@@ -28,17 +28,21 @@ nav a:hover {
 	text-shadow: rgb(209, 217, 212) 0.5px 0.5px;
 
 }
+@media(max-width:1000px){
+	.navbar-toggler {
+		background-color: #E4632C;
+	}
+}
 
 /* --------------- Cuerpo ---------------------------*/
 
 .body {
-
-	font-family: 'Belanosima', sans-serif;
+	font-family: 'Poppins', Regular;
 	display: grid;
 	min-height: 100vh;
 	grid-template-rows: auto 1fr auto;
 	text-align: center;
-	background-color: #09031A;
+	background: linear-gradient(to top, #09031A, rgb(107, 14, 58))
 }
 
 .container {
@@ -46,39 +50,77 @@ nav a:hover {
 }
 
 /* --- Texto Home ---*/
-#grupo-home {
-	width: 664px;
-	height: 332px;
-	flex-shrink: 0;
-	margin: auto;
+
+#textoNombre {
+	position: absolute;
+	margin-top: 20%;
+	margin-left: 10%;
 }
 
 h1.nombre {
-	font-size: 155px;
+	font-size: 160px;
 	color: #D9C8C8;
+	font-family: Poppins, Semibold;
 	font-style: normal;
-	font-weight: 400;
+	font-weight: 600;
 	line-height: 70px;
 	/* 43.75% */
-	margin-bottom: 30px;
+	margin-bottom: 20px
 }
 
 h1.apellido {
-	font-size: 150px;
-	color: #D9C8C8;
+	font-size: 88px;
+	color: #E4632C;
+	font-family: Poppins, Medium;
 	font-style: normal;
-	font-weight: 400;
+	font-weight: 500;
 	line-height: 100px;
 	/* 66.667% */
 }
 
 .subtitulo {
-	font-size: 32px;
+	font-size: 28px;
 	color: #D9C8C8;
-	text-align: center;
+	text-align: right;
+	font-family: Poppins, Ligth;
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
+	margin-top: auto;
+	margin-right: 16px;
+}
+
+.barra {
+	width: 8px;
+	height: 140px;
+	background-color: #D9D9D9;
+	padding-left: 2px;
+	padding-right: 2px;
+	margin-top: auto;
+}
+
+@media(max-width:800px) {
+	#textoNombre {
+		margin-top: 16px;
+		position: relative;
+	}
+
+	h1.nombre {
+		font-size: 80px;
+		margin-bottom: 0px;
+	}
+
+	h1.apellido {
+		font-size: 50px;
+	}
+
+	#textoSub {
+		font-size: 25px;
+	}
+
+	.barra {
+		height: 110;
+	}
 }
 
 /* --- Grupo de imágenes ---*/
@@ -125,7 +167,7 @@ h1.apellido {
 #trabajemos {
 	color: #FFF;
 	font-family: Belanosima;
-	font-size: 24px;
+	font-size: 26px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
@@ -148,13 +190,15 @@ h1.apellido {
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
+	margin-top: -15px;
+	margin-bottom: 16px;
 }
 
 #texto-contacto {
 	color: #FFF;
 	text-align: center;
-	font-family: Belanosima;
-	font-size: 32px;
+	font-family: Poppins, Ligth;
+	font-size: 25px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
@@ -185,7 +229,7 @@ h1.apellido {
 
 button.btn {
 	color: #FFF;
-	font-family: Belanosima;
+	font-family: Poppins;
 	font-size: 20px;
 	font-style: normal;
 	margin-top: 16px;
@@ -212,7 +256,7 @@ button.btn:hover {
 
 
 #llamame {
-	color: #FFF;
+	color: rgb(237, 237, 237);
 	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	font-family: Oooh Baby;
 	font-size: 40px;
@@ -221,7 +265,8 @@ button.btn:hover {
 	line-height: 70px;
 	/* 175% */
 	margin-left: 230px;
-	margin-top: 90px;
+	margin-top: 20px;
+
 }
 
 #nombre-sobre {
@@ -237,46 +282,56 @@ button.btn:hover {
 	margin-bottom: 50px;
 }
 
+#textSobre {
+	width: 407px;
+	height: 301px;
+	flex-shrink: 0;
+	color: rgb(228, 228, 228);
+	text-align: center;
+	font-family: Poppins;
+	font-size: 18px;
+	font-style: normal;
+	margin-left: 100px;
+	margin-top: 70px;
+}
+
 .indicador {
-	width: 328px;
+	width: 330px;
 	height: 9px;
 	flex-shrink: 0;
 	background: #D9C8C8;
 	margin-left: 140px;
 	position: relative;
-	bottom: 95px;
-
+	border-radius: 5px;
+	margin-bottom: 20px;
 }
 
 .circulos-nav {
-	width: 186px;
+	width: 330px;
+	height: 50px;
 	display: inline;
-	margin-left: 90px;
+	margin-left: 120px;
 	position: relative;
-	bottom: 75px;
+	margin: auto;
+	align-items: flex-end;
 }
 
-.btn-circulo {
-	width: 25px;
-	height: auto;
-
+.circulo {
+	stroke: #E4632C;
+	stroke-width: 2;
+	fill: transparent;
 }
 
-.text-sobre {
-	width: 407px;
-	height: 301px;
-	flex-shrink: 0;
-	color: #FFF;
-	text-align: center;
-	font-family: Belanosima;
-	font-size: 20px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 30px;
-	/* 150% */
-	margin-left: 100px;
-	margin-top: 80px;
+.circulo:hover {
+	fill: rgb(253, 110, 49);
 }
+
+.circulo:active {
+	fill: #E4632C;
+}
+
+
+
 
 #img-grande {
 	width: 445px;
@@ -304,6 +359,15 @@ button.btn:hover {
 	background: #D9D9D9;
 }
 
+@media(min-width:800px) {
+	.circulos-nav {
+		margin-right: 150px;
+	}
+}
+
+
+
+
 /* --------------- Conocimiento ---------------------------*/
 h1.titulo-con {
 	width: 672px;
@@ -315,55 +379,113 @@ h1.titulo-con {
 	font-style: normal;
 	font-weight: 400;
 	line-height: 70px;
-	
-	/* 58.333% */
+	margin-top: 100px;
+	margin-bottom: 50px;
+	text-align: left;
 }
+
+.cuerpo {
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	margin-bottom: 30px;
+	position: relative;
+}
+
 
 .alineacion-con {
 	position: relative;
 	text-align: center;
+}
+
+.dimensionCard {
+	width: 177px;
+	height: 198px;
+	flex-shrink: 0;
+	margin: 5px;
+	margin-bottom: 10px;
+}
+
+.cuadrado {
+	width: 126px;
+	height: 126px;
+	position: relative;
+	margin-top: -390px;
+	justify-content: center;
+	text-shadow: -5px -5px 5px #888888;
+}
+
+.texto-interior {
+	position: relative;
+	color: #2D2148;
+	font-family: Belanosima;
+	font-size: 35px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	margin-top: -120px;
 
 }
 
 .indicador-con {
-	
 	width: 328px;
 	height: 9px;
-	flex-shrink: 0;
 	background: #D9C8C8;
+	margin: auto;
+	
+	border-radius: 5px;
+}
 
+
+
+.btn-per {
+	width: 30px;
+	height: 30px;
+	padding: 6px 0px;
+	border-radius: 15px;
+	font-size: 8px;
+	text-align: center;
+	margin: 5px;
+	background-color: #E4632C;
+	border-color: rgb(182, 92, 52);
 
 }
 
-.alineacion-img {
+.btn-per:hover {
+	background-color: rgb(255, 174, 78);
+}
+
+.btn-per:active {
+	background-color: #E4632C;
+}
+
+#mostrarIde {
+	position: relative;
+	text-align: center;
+	justify-content: center;
+	margin: auto;
+
+}
+
+.star {
+	position: relative;
+	margin: auto;
+	margin-top: -245px;
+	margin-bottom: 5px;
+}
+
+.circulos-nav2 {
+	width: 330px;
+	height: 50px;
 	display: inline;
-	flex-direction: column;
-
+	position: relative;
+	margin: auto;
+	align-items: flex-end;
+	margin-top: 20px;
 }
-
-.cuadrado {
-	width: 150px;
-	height: 158px;
-	flex-shrink: 0;
-	background-color: #D9C8C8;
+.col-md-4{
+	margin-top: 20px;
 }
-
-#textos-centro {
-	width: 823px;
-	height: 263px;
-	flex-shrink: 0;
-	display: flex;
-}
-
-.texto-interior {
-	color: #FFF;
-	font-family: Belanosima;
-	font-size: 20px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: normal;
-}
-
 
 /* ----------------------- Footer de página ------------------------------- */
 

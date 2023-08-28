@@ -1,6 +1,5 @@
 package cl.portafolio.model.servicio;
 
-
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,29 +12,39 @@ import cl.portafolio.model.repository.IConocimientoRepository;
 public class ConocimientoServicio {
 
 	public ConocimientoServicio() {
-		
+
 	}
-	
+
 	@Autowired
 	private IConocimientoRepository conRepo;
-	
-	public List<ConocimientoEntity> getConocimientos(){
+
+	public List<ConocimientoEntity> getConocimientos() {
 		return conRepo.findAll();
 	}
-	
+
 	public ConocimientoEntity getConocimiento(int id) {
 		return conRepo.getOne(id);
 	}
-	
+
 	public void createConocimiento(ConocimientoEntity conocimiento) {
 		conRepo.save(conocimiento);
 	}
-	
+
 	public void updateConocimiento(ConocimientoEntity conocimiento) {
 		conRepo.save(conocimiento);
 	}
-	
+
 	public void deleteConocimiento(int id) {
 		conRepo.delete(conRepo.getOne(id));
+	}
+
+	public List<ConocimientoEntity> findByEspecificacion(String especificacion) {
+		return conRepo.findByEspecificacion(especificacion);
+
+	}
+
+	public List<ConocimientoEntity> findConByEspecificacionList(List<String> especificacion) {
+		return conRepo.findConByEspecificacionList(especificacion);
+
 	}
 }

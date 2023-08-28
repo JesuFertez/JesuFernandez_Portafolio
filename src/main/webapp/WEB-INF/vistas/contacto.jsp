@@ -6,20 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<!--  Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-	href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap"
-	rel="stylesheet">
-<!-- Boostrap -->
-<link
-	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-	rel="stylesheet"
-	integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-	crossorigin="anonymous">
-<!-- Hoja de estilo -->
-<link rel="stylesheet" href="res/css/estilo.css">
+<%@ include file="links-proyecto.jsp" %>
 </head>
 <body class="body">
 	<header>
@@ -27,7 +14,7 @@
 	</header>
 	<div class="container">
 		<div class="container row">
-			<div class="col-5 texto-lateral">
+			<div class="col-lg-6 col-md-6 col-sm-12 texto-lateral">
 				<h3 id="trabajemos">Trabajemos juntos</h3>
 				<h1 id="contactate">Ponte en contacto!</h1>
 				<h1 id="poder">Querer es poder!</h1>
@@ -35,8 +22,8 @@
 					del aprendizaje y la perseverancia, pues es sólo así, que nos
 					convertimos en mejores versiones de nosotros mismos...</p>
 			</div>
-			<div class="col-1"></div>
-			<div class="container col-6" style="margin: auto">
+			
+			<div class="container col-lg-6 col-md-6 col-sm-12" style="margin: auto">
 				<div class="container col-12">
 					<form action="Contacto" method="post">
 						<label for="nombre" class="form-label lala">Nombre</label> <input

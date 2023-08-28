@@ -12,11 +12,17 @@ public class ContactoEntity {
 	
 	@Id
 	@Column(name="id")
-	int id;
-	String nombre;
-	String correo;
-	String mensaje;
+	private int id;
+	private String nombre;
+	private String correo;
+	private String mensaje;
 	
+	
+	
+	public ContactoEntity() {
+		super();
+	}
+
 	public ContactoEntity(int id, String nombre, String correo, String mensaje) {
 		super();
 		this.id = id;
